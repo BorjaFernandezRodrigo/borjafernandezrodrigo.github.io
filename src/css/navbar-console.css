@@ -1,0 +1,98 @@
+@import './animations.css';
+
+.console__minimized {
+  @apply !h-14 !shadow-md;
+}
+
+.console__minimized .console__panel-output {
+  @apply hidden;
+  animation: slideOutUp 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.console__minimized .console__input-line {
+  @apply hidden;
+  animation: slideOutDown 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.console__minimized .console__minimized-button {
+  @apply bg-red;
+  transform: rotate(180deg);
+}
+
+.console {
+  @apply flex flex-col border-t border-white/10 w-full h-[350px] max-w-[270px]
+  rounded-2xl bg-black/30 rounded-lg border border-white/5 overflow-hidden;
+  transition:
+    height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s ease;
+}
+
+.console__header {
+  @apply flex items-center justify-between p-3 bg-black/40 border-b border-white/5 flex-shrink-0;
+}
+
+.console__title {
+  @apply text-sm font-bold text-secondary font-mono tracking-[0.1em];
+}
+
+.console__minimized-button {
+  @apply w-2 h-2 rounded-full cursor-pointer animate-pulse bg-primary;
+}
+
+.console__panel-output {
+  @apply flex flex-col gap-1 text-xs font-mono flex-1 overflow-y-auto p-3 bg-black/20;
+  font-family: 'Courier New', monospace;
+  scrollbar-color: rgba(16, 185, 129, 0.3) transparent;
+}
+
+.console__panel-output::-webkit-scrollbar {
+  @apply w-1;
+}
+
+.console__panel-output::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.console__panel-output::-webkit-scrollbar-thumb {
+  @apply bg-primary;
+}
+
+.console__panel-output::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
+
+.console__line {
+  @apply text-xs text-white-dark;
+  animation: fadeInUp 0.3s ease-out;
+  word-break: break-word;
+  line-height: 1.6;
+}
+
+.console__input-line {
+  @apply flex items-center px-4 py-2 bg-black/10 border-t border-white/5 flex-shrink-0 gap-2;
+}
+
+.console__prompt {
+  @apply text-secondary font-bold font-mono text-sm flex-shrink-0;
+  font-family: 'Courier New', monospace;
+}
+
+.console__input {
+  @apply text-secondary flex-1 bg-transparent outline-none border-none text-white-dark 
+  text-sm outline-none p-0;
+  font-family: 'Courier New', monospace;
+}
+
+.console__input::placeholder {
+  @apply text-white/40;
+}
+
+.help-text,
+.contact-text {
+  line-height: 1.8;
+}
+
+.help-text strong,
+.contact-text strong {
+  @apply text-secondary;
+}

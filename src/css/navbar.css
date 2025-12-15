@@ -1,0 +1,53 @@
+@import './animations.css';
+
+.navbar {
+  @apply w-full h-full flex flex-col border-r border-white/5 backdrop-blur-[15px] p-6 order-2 overflow-y-auto;
+}
+
+.navbar__content {
+  @apply flex flex-col flex-1 gap-6;
+}
+
+.navbar__nav {
+  @apply flex flex-col gap-2;
+}
+
+.navbar__nav-link {
+  @apply flex items-center gap-4 px-4 py-3 rounded-xl no-underline transition-all duration-300 ease-in-out hover:bg-primary/20 hover:scale-[1.1];
+}
+
+.navbar__nav-link:hover {
+  @apply bg-white/5;
+  transform: translateX(4px);
+}
+
+.navbar__nav-icon {
+  @apply text-2xl text-white-dark;
+  transition: color 0.3s ease;
+}
+
+.navbar__nav-link:hover .navbar__nav-icon {
+  @apply text-primary;
+}
+
+.navbar__nav-text {
+  @apply text-base text-white-dark font-medium;
+  transition: color 0.3s ease;
+}
+
+.navbar__nav-link:hover .navbar__nav-text {
+  @apply text-white-light;
+}
+
+.navbar__footer {
+  @apply flex flex-col gap-2 mt-6 pt-5 border-t border-white/10;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    @apply w-[320px] h-full order-1;
+  }
+  .navbar__footer {
+    @apply flex;
+  }
+}

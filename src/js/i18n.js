@@ -2,6 +2,8 @@ export class I18n {
   constructor(defaultLanguage, supportedLanguages) {
     this.defaultLanguage = defaultLanguage
     this.supportedLanguages = supportedLanguages
+    this.locale = defaultLanguage
+    this.messages = {}
   }
 
   async loadLanguage(lang) {
@@ -15,6 +17,7 @@ export class I18n {
     const data = await response.json()
     this.locale = lang
     this.messages = data
+    document.documentElement.setAttribute('lang', this.locale)
   }
 
   t(key) {
@@ -26,12 +29,13 @@ export class I18n {
       const key = element.getAttribute('data-i18n')
       element.textContent = this.t(key)
     })
+    document.documentElement.setAttribute('lang', this.locale)
   }
 
-  setLanguage(lang) {
+  async setLanguage(lang) {
     if (!this.supportedLanguages.includes(lang)) {
       lang = this.defaultLanguage
     }
-    this.loadLanguage(lang)
+    await this.loadLanguage(lang)
   }
 }

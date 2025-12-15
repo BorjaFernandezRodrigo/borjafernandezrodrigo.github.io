@@ -1,0 +1,35 @@
+.navbar-profile {
+  @apply flex items-center gap-2 p-1 rounded-xl bg-white/5 border border-white/5;
+}
+
+.navbar-profile__avatar {
+  @apply bg-center bg-no-repeat bg-cover rounded-full w-14 h-14 min-w-12 border-2 border-primary;
+  background-image: url('img/avatar.png');
+  box-shadow:
+    0 0 0 2px var(--primary-color),
+    0 0 0 4px #112117;
+}
+
+.navbar-profile__avatar[data-alt] {
+  --alt: attr(data-alt);
+}
+
+.navbar-profile__info {
+  @apply flex flex-col gap-2;
+}
+
+.navbar-profile__title {
+  @apply text-white text-base font-bold leading-tight;
+}
+
+.navbar-profile__status {
+  @apply flex items-center gap-2;
+}
+
+.navbar-profile__status-dot {
+  @apply w-2 h-2 rounded-full bg-primary animate-pulse;
+}
+
+.navbar-profile__status-text {
+  @apply text-primary/80 text-xs font-mono font-medium tracking-wide;
+}

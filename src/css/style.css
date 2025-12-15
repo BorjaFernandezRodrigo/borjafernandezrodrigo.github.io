@@ -1,0 +1,46 @@
+@import './navbar-profile.css';
+@import './navbar-console.css';
+@import './navbar.css';
+@import './layout.css';
+@import './theme.css';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-sans);
+  background-color: var(--color-background-light);
+  color: #ffffff;
+}
+
+body {
+  @apply bg-background-light text-slate-900 h-screen 
+        overflow-hidden flex flex-col md:flex-row relative
+        dark:text-white dark:bg-background-dark;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #112117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a4535;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #30e87a;
+}
