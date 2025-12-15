@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #30e87a;
+  --color-secondary: #10b981;
+  --color-background-light: #f6f8f7;
+  --color-background-dark: #112117;
+  --color-surface-dark: #1a2c22;
+  --color-white-light: white;
+  --color-white-dark: #d1d5db;
+  --color-blue: #3b82f6;
+  --color-red: #ef4444;
+  --color-grey: #9ca3af;
+
+  /* FONT */
+  --font-family-sans: Spline Sans, sans-serif;
+  --font-xs: 0.75rem; /* 12px */
+  --font-sm: 0.875rem; /* 14px */
+  --font-base: 1rem; /* 16px */
+  --font-lg: 1.125rem; /* 18px */
+  --font-xl: 1.25rem; /* 20px */
+  --font-2xl: 1.5rem; /* 24px */
+
+  /* RADIUS */
+  --radius-default: 4px;
+  --radius-lg: 1rem;
+  --radius-xl: 3rem;
+  --radius-full: 9999px;
+
+  --box-shadow-primary: 0 4px 12px rgba(16, 185, 129, 0.15);
+
+  /* /* BACKGROUND PATTERNS */
+  --background-grid-pattern:
+    linear-gradient(rgba(48, 232, 122, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(48, 232, 122, 0.05) 1px, transparent 1px);
+}
