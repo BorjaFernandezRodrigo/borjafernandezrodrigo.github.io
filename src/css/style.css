@@ -1,22 +1,21 @@
+@import './animations.css';
+@import './navbar-links.css';
 @import './navbar-profile.css';
 @import './navbar-console.css';
 @import './navbar.css';
 @import './layout.css';
 @import './theme.css';
+@import './button-locale.css';
+@import './button-theme.css';
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-family-sans);
-  background-color: var(--color-background-light);
-  color: #ffffff;
+  @apply m-0 p-0 font-sans;
 }
 
 body {
-  @apply bg-background-light text-slate-900 h-screen 
-        overflow-hidden flex flex-col md:flex-row relative
-        dark:text-white dark:bg-background-dark;
+  @apply h-screen overflow-hidden flex flex-col md:flex-row relative
+        bg-background-light dark:bg-background-dark;
 }
 
 .material-symbols-outlined {
@@ -33,14 +32,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #112117;
+  @apply bg-background-dark;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2a4535;
-  border-radius: 4px;
+  @apply bg-[#2a4535] rounded-md;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #30e87a;
+  @apply bg-[#30e87a];
 }
