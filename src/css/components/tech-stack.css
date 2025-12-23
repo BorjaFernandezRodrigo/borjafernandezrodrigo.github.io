@@ -1,0 +1,147 @@
+.tech-stack {
+  @apply w-full;
+}
+
+.tech-stack__header {
+  @apply h-15 mb-4 flex flex-col sm:flex-row items-center sm:justify-between gap-4;
+}
+
+.tech-stack__title-wrapper {
+  @apply flex items-center gap-2;
+}
+
+.tech-stack__icon {
+  @apply text-primary text-3xl;
+}
+
+.tech-stack__title {
+  @apply text-white text-2xl font-bold mb-2;
+}
+
+.tech-stack__filter {
+  @apply w-full overflow-hidden h-15 items-center flex justify-end;
+}
+
+.tech-stack__badges {
+  @apply flex flex-wrap gap-2 items-center h-10;
+}
+
+.tech-stack__cards {
+  @apply transition-opacity duration-300 ease-in-out flex gap-4 overflow-x-auto pb-4;
+}
+
+.tech-stack__card {
+  @apply min-w-50 shrink-0;
+}
+
+.tech-stack__card-header {
+  @apply flex items-center gap-3 mb-3;
+}
+
+.tech-stack__category {
+  @apply text-xs text-gray-400 mt-3 font-mono uppercase tracking-wider;
+}
+
+.tech-stack__badge-icon {
+  @apply size-10 rounded-lg flex items-center justify-center font-bold text-xs;
+}
+
+.tech-stack__badge-icon--yellow {
+  @apply bg-yellow-500/20 text-yellow-400;
+}
+
+.tech-stack__badge-icon--blue {
+  @apply bg-blue-500/20 text-blue-400;
+}
+
+.tech-stack__badge-icon--primary {
+  @apply bg-primary/20 text-primary;
+}
+
+.tech-stack__badge-icon--purple {
+  @apply bg-purple-500/20 text-purple-400;
+}
+
+.tech-stack__badge-icon--blue-600 {
+  @apply bg-blue-600/20 text-blue-500;
+}
+
+.tech-stack__badge-icon--green {
+  @apply bg-green-500/20 text-green-400;
+}
+
+.tech-stack__badge-icon--orange {
+  @apply bg-orange-500/20 text-orange-400;
+}
+
+.tech-stack__badge-icon--cyan {
+  @apply bg-cyan-500/20 text-cyan-400;
+}
+
+.tech-stack__badge-icon--red {
+  @apply bg-red-500/20 text-red-400;
+}
+
+.tech-stack__badge-icon--gray {
+  @apply bg-gray-500/20 text-gray-400;
+}
+
+.tech-stack__badge-icon--indigo {
+  @apply bg-indigo-500/20 text-indigo-400;
+}
+
+.tech-stack__badge-name {
+  @apply text-white font-bold;
+}
+
+.tech-stack__skill-bar {
+  @apply h-1 w-full bg-gray-800 rounded-full overflow-hidden;
+}
+
+.tech-stack__skill-fill {
+  @apply h-full rounded-full;
+}
+
+.tech-stack__skill-fill--yellow {
+  @apply bg-yellow-400;
+}
+
+.tech-stack__skill-fill--blue {
+  @apply bg-blue-400;
+}
+
+.tech-stack__skill-fill--primary {
+  @apply bg-primary;
+}
+
+.tech-stack__skill-fill--purple {
+  @apply bg-purple-400;
+}
+
+.tech-stack__skill-fill--blue-600 {
+  @apply bg-blue-500;
+}
+
+.tech-stack__skill-fill--green {
+  @apply bg-green-400;
+}
+
+.tech-stack__skill-fill--orange {
+  @apply bg-orange-400;
+}
+
+.tech-stack__skill-fill--cyan {
+  @apply bg-cyan-400;
+}
+
+.tech-stack__skill-fill--red {
+  @apply bg-red-400;
+}
+
+.tech-stack__skill-fill--gray {
+  @apply bg-gray-400;
+}
+
+.tech-stack__skill-fill--indigo {
+  @apply bg-indigo-400;
+}

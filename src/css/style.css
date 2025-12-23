@@ -3,12 +3,16 @@
 
 @import './layout/layout.css';
 @import './layout/navbar.css';
+@import './layout/header.css';
+@import './layout/stats.css';
 
 @import './components/navbar-links.css';
 @import './components/navbar-profile.css';
 @import './components/navbar-console.css';
 @import './components/button-locale.css';
 @import './components/button-theme.css';
+@import './components/tech-stack.css';
+@import './components/badge.css';
 
 html,
 body {
