@@ -1,4 +1,3 @@
-import { config } from '../../config/config'
 import { Header } from './Header.js'
 import { Navbar } from './Navbar.js'
 import { Projects } from './Projects'
@@ -6,13 +5,13 @@ import { Stats } from './Stats'
 import { TechStack } from './TechStack'
 
 export class Layout {
-  constructor(i18n, theme) {
+  constructor(i18n, theme, menuItems = [], stats = [], techStackService) {
     this.i18n = i18n
     this.header = new Header(this.i18n)
-    this.navbar = new Navbar(this.i18n, theme, config.menuItems)
-    console.log(config.stats)
-    this.stats = new Stats(this.i18n, config.stats)
-    this.techStack = new TechStack(this.i18n, config.technologies)
+    this.navbar = new Navbar(this.i18n, theme, menuItems)
+    console.log(stats)
+    this.stats = new Stats(this.i18n, stats)
+    this.techStack = new TechStack(this.i18n, techStackService)
     this.projects = new Projects(this.i18n)
   }
 
@@ -25,16 +24,19 @@ export class Layout {
         <nav class="h-screen">${this.navbar.render()}</nav>
         <main class="layout__main">
           <div class="layout__main-content">
-            <div>
+            <div id="home">
               ${this.header.render()}
             </div>
-            <div class="mt-25">
+            <div id="stats" class="mt-25">
               ${this.stats.render()}
             </div>
-            <div class="mt-25">
+            <div id="technologies" class="mt-25">
               ${this.techStack.render()}
             </div>
-            <div class="mt-25">
+            <div id="projects" class="mt-25">
+              ${this.projects.render()}
+            </div>
+             <div id="experience" class="mt-25">
               ${this.projects.render()}
             </div>
           </div>

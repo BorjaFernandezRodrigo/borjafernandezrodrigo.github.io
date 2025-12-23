@@ -1,4 +1,4 @@
-export class Theme {
+export class ThemeService {
   loadTheme() {
     document.documentElement.classList.add('dark')
   }

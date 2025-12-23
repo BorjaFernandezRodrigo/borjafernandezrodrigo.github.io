@@ -1,4 +1,4 @@
-export class I18n {
+export class I18nService {
   constructor(defaultLanguage, supportedLanguages) {
     this.defaultLanguage = defaultLanguage
     this.supportedLanguages = supportedLanguages
