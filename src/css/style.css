@@ -7,6 +7,7 @@
 @import './layout/stats.css';
 @import './layout/projects.css';
 @import './layout/tech-stack.css';
+@import './layout/career.css';
 
 @import './components/navbar-links.css';
 @import './components/navbar-profile.css';

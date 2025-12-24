@@ -1,0 +1,76 @@
+/* Career Section */
+.career {
+  @apply space-y-8 pb-12;
+}
+
+.career__header {
+  @apply flex items-center gap-3 mb-4;
+}
+
+.career__icon {
+  @apply text-primary text-3xl;
+}
+
+.career__title {
+  @apply text-2xl font-bold text-slate-800 dark:text-white;
+}
+
+.career__container {
+  @apply max-h-112.5 overflow-y-auto pr-4;
+}
+
+.career__timeline {
+  @apply relative border-l-2 border-primary/20 ml-3 md:ml-6 space-y-12 pl-8 md:pl-12 py-2;
+}
+
+/* Career Item */
+.career-item {
+  @apply relative;
+}
+
+.career-item__dot {
+  @apply absolute top-1 size-5 border-2 rounded-full transition-colors;
+  left: -41px;
+}
+
+@media (min-width: 768px) {
+  .career-item__dot {
+    left: -57px;
+  }
+}
+
+.career-item__dot--active {
+  @apply bg-primary border-primary shadow-[0_0_10px_rgba(48,232,122,0.3)];
+}
+
+.career-item__dot--inactive {
+  @apply bg-white dark:bg-background-dark border-gray-400 dark:border-gray-600 group-hover:border-primary group-hover:bg-primary;
+}
+
+.career-item__header {
+  @apply flex flex-col md:flex-row md:items-baseline gap-2 mb-2;
+}
+
+.career-item__title {
+  @apply text-lg font-bold text-slate-800 dark:text-white group-hover:text-primary transition-colors;
+}
+
+.career-item__period {
+  @apply font-mono text-sm px-2 py-0.5 rounded;
+}
+
+.career-item__period--active {
+  @apply text-primary bg-primary/10 border border-primary/20;
+}
+
+.career-item__period--inactive {
+  @apply text-gray-500 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/5;
+}
+
+.career-item__company {
+  @apply text-gray-600 dark:text-gray-400 font-medium mb-2;
+}
+
+.career-item__description {
+  @apply text-gray-500 dark:text-gray-500 text-sm leading-relaxed max-w-2xl;
+}
