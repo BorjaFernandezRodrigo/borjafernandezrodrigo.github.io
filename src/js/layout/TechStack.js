@@ -6,15 +6,19 @@ export class TechStack {
     this.selectedCategory = 'all'
     this.i18nService = i18nService
     this.techStackService = techStackService
-    this.badgeComponent = new Badge()
+    this.badgeComponent = new Badge(i18nService)
   }
 
   renderTech(tech) {
     const categories = Array.isArray(tech.category)
-      ? tech.category.join(' / ')
-      : tech.category
+      ? tech.category
+      : [tech.category]
 
-    return ` ${new CardComponent().render(`
+    const translatedCategories = categories
+      .map((cat) => this.i18nService.t(`tech.category.${cat}`))
+      .join(' / ')
+
+    return ` ${new CardComponent(this.i18nService).render(`
       <div class="tech-stack__card">
         <div class="tech-stack__card-header">
           <div class="tech-stack__badge-icon tech-stack__badge-icon--${tech.color}">
@@ -26,7 +30,7 @@ export class TechStack {
           <div class="tech-stack__skill-fill tech-stack__skill-fill--${tech.color}" style="width: ${tech.skill}%"></div>
         </div>
         <p class="tech-stack__category">
-          ${categories}
+          ${translatedCategories}
         </p>
       </div>
     `)}`
@@ -52,7 +56,7 @@ export class TechStack {
                   this.badgeComponent.render(
                     this.selectedCategory === cat,
                     cat,
-                    this.i18nService.t(`tech.filter.${cat}`)
+                    `tech.category.${cat}`
                   )
                 )
                 .join('')}
@@ -91,7 +95,7 @@ export class TechStack {
           this.badgeComponent.render(
             this.selectedCategory === cat,
             cat,
-            this.i18nService.t(`tech.filter.${cat}`)
+            `tech.category.${cat}`
           )
         )
         .join('')

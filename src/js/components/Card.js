@@ -1,5 +1,6 @@
 export class CardComponent {
-  constructor(title, icon) {
+  constructor(i18n, title, icon) {
+    this.I18n = i18n
     this.title = title
     this.icon = icon
   }
@@ -13,7 +14,7 @@ export class CardComponent {
             <div class="flex justify-between items-start">
               ${
                 this.title
-                  ? `<p class="text-gray-500 dark:text-gray-400 text-sm font-medium uppercase tracking-wider " data-i18n="${this.title}">${this.title}</p>`
+                  ? `<p class="text-gray-500 dark:text-gray-400 text-sm font-medium uppercase tracking-wider " data-i18n="${this.title}">${this.I18n.t(this.title)}</p>`
                   : ''
               }
               ${

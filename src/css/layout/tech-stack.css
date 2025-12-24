@@ -15,7 +15,7 @@
 }
 
 .tech-stack__title {
-  @apply text-white text-2xl font-bold mb-2;
+  @apply text-slate-900 dark:text-white text-2xl font-bold mb-2;
 }
 
 .tech-stack__filter {
@@ -39,7 +39,7 @@
 }
 
 .tech-stack__category {
-  @apply text-xs text-gray-400 mt-3 font-mono uppercase tracking-wider;
+  @apply text-xs text-gray-600 dark:text-gray-400 mt-3 font-mono uppercase tracking-wider;
 }
 
 .tech-stack__badge-icon {
@@ -47,55 +47,55 @@
 }
 
 .tech-stack__badge-icon--yellow {
-  @apply bg-yellow-500/20 text-yellow-400;
+  @apply bg-yellow-500/20 dark:bg-yellow-500/20 text-yellow-600 dark:text-yellow-400;
 }
 
 .tech-stack__badge-icon--blue {
-  @apply bg-blue-500/20 text-blue-400;
+  @apply bg-blue-500/20 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400;
 }
 
 .tech-stack__badge-icon--primary {
-  @apply bg-primary/20 text-primary;
+  @apply bg-primary/20 dark:bg-primary/20 text-primary/80 dark:text-primary;
 }
 
 .tech-stack__badge-icon--purple {
-  @apply bg-purple-500/20 text-purple-400;
+  @apply bg-purple-500/20 dark:bg-purple-500/20 text-purple-600 dark:text-purple-400;
 }
 
 .tech-stack__badge-icon--blue-600 {
-  @apply bg-blue-600/20 text-blue-500;
+  @apply bg-blue-600/20 dark:bg-blue-600/20 text-blue-700 dark:text-blue-500;
 }
 
 .tech-stack__badge-icon--green {
-  @apply bg-green-500/20 text-green-400;
+  @apply bg-green-500/20 dark:bg-green-500/20 text-green-600 dark:text-green-400;
 }
 
 .tech-stack__badge-icon--orange {
-  @apply bg-orange-500/20 text-orange-400;
+  @apply bg-orange-500/20 dark:bg-orange-500/20 text-orange-600 dark:text-orange-400;
 }
 
 .tech-stack__badge-icon--cyan {
-  @apply bg-cyan-500/20 text-cyan-400;
+  @apply bg-cyan-500/20 dark:bg-cyan-500/20 text-cyan-600 dark:text-cyan-400;
 }
 
 .tech-stack__badge-icon--red {
-  @apply bg-red-500/20 text-red-400;
+  @apply bg-red-500/20 dark:bg-red-500/20 text-red-600 dark:text-red-400;
 }
 
 .tech-stack__badge-icon--gray {
-  @apply bg-gray-500/20 text-gray-400;
+  @apply bg-gray-500/20 dark:bg-gray-500/20 text-gray-600 dark:text-gray-400;
 }
 
 .tech-stack__badge-icon--indigo {
-  @apply bg-indigo-500/20 text-indigo-400;
+  @apply bg-indigo-500/20 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400;
 }
 
 .tech-stack__badge-name {
-  @apply text-white font-bold;
+  @apply text-slate-900 dark:text-white font-bold;
 }
 
 .tech-stack__skill-bar {
-  @apply h-1 w-full bg-gray-800 rounded-full overflow-hidden;
+  @apply h-1 w-full bg-gray-300 dark:bg-gray-800 rounded-full overflow-hidden;
 }
 
 .tech-stack__skill-fill {

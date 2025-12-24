@@ -12,7 +12,7 @@ export class Stats {
         ${this.stats
           .map(
             (stat) => `
-            ${new CardComponent(this.i18n.t(stat.key), stat.icon).render(
+            ${new CardComponent(this.i18n, stat.key, stat.icon).render(
               `
               ${
                 stat.key === 'stats.experience.title'

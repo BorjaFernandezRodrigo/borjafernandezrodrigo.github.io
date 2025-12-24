@@ -19,5 +19,5 @@
 }
 
 .layout__main-content {
-  @apply max-w-[1000px] mx-auto flex flex-col justify-center;
+  @apply max-w-290 mx-auto flex flex-col justify-center;
 }
