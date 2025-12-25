@@ -1,6 +1,6 @@
 /* Projects Section */
 .projects {
-  @apply space-y-8;
+  @apply space-y-8 overflow-auto h-110;
 }
 
 .projects__header {
