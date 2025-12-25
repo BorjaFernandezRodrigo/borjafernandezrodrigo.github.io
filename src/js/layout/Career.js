@@ -18,14 +18,14 @@ export class Career {
       <div class="career-item group">
         <div class="career-item__dot ${dotClass}"></div>
         <div class="career-item__header">
-          <h4 class="career-item__title">${item.title}</h4>
-          <span class="career-item__period ${periodClass}">
-            ${item.period}
+          <h4 class="career-item__title" data-i18n="career.${item.id}.title">${this.i18n.t(`career.${item.id}.title`)}</h4>
+          <span class="career-item__period ${periodClass}" data-i18n="career.${item.id}.period">
+            ${this.i18n.t(`career.${item.id}.period`)}
           </span>
         </div>
-        <p class="career-item__company">${item.company}</p>
-        <p class="career-item__description">
-          ${item.description}
+        <p class="career-item__company" data-i18n="career.${item.id}.company">${this.i18n.t(`career.${item.id}.company`)}</p>
+        <p class="career-item__description" data-i18n="career.${item.id}.description">
+          ${this.i18n.t(`career.${item.id}.description`)}
         </p>
       </div>
     `
