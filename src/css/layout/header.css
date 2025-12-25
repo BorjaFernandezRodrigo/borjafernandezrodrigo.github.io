@@ -15,7 +15,7 @@
 }
 
 .header__title-label {
-  @apply bg-primary/20 text-primary px-2 py-1 rounded text-xs font-bold tracking-wider border border-primary/20 backdrop-blur-sm;
+  @apply bg-secondary/20 text-secondary px-2 py-1 rounded text-xs font-bold tracking-wider border border-secondary/20 backdrop-blur-sm;
 }
 
 .header__title-text {
