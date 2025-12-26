@@ -7,7 +7,7 @@ export class CardComponent {
 
   render(content) {
     return /* html */ `
-     <div class="bg-white dark:bg-surface-dark/50 backdrop-blur-sm border border-gray-200 dark:border-primary/20 p-3 sm:p-4 md:p-6 rounded-xl flex flex-col justify-between gap-2 sm:gap-3 md:gap-4 group hover:bg-gray-50 dark:hover:bg-primary/5 transition-colors shadow-sm dark:shadow-none" >
+     <div class="bg-white dark:bg-surface-dark/50 backdrop-blur-sm border border-gray-200 dark:border-primary/20 p-6 rounded-xl flex flex-col justify-between gap-2 sm:gap-3 md:gap-4 group hover:bg-gray-50 dark:hover:bg-primary/5 transition-colors shadow-sm dark:shadow-none" >
         ${
           this.title && this.title
             ? `
