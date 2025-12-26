@@ -1,6 +1,6 @@
 <div align="center">
   
-<img src="./public/img/avatar.png" width="150" height="150" style="border-radius: 50%;" alt="Avatar de Borja Fernández Rodrigo"/>
+<img src="https://github.com/BorjaFernandezRodrigo/BorjaFernandezRodrigo/blob/main/public/img/avatar.png?raw=true" width="150" height="150" style="border-radius: 50%;" alt="Avatar de Borja Fernández Rodrigo"/>
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-30e87a?style=for-the-badge)](https://github.com/BorjaFernandezRodrigo)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/borjafernandez)
@@ -112,28 +112,6 @@ const borja = {
   </picture>
 </div>
 
-<div align="center">
-  
-  ![Snake animation](https://raw.githubusercontent.com/BorjaFernandezRodrigo/BorjaFernandezRodrigo/output/github-contribution-grid-snake-dark.svg)
-  
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=BorjaFernandezRodrigo&theme=radical&no-frame=true&no-bg=true&margin-w=4&row=1" width="100%"/>
-</div>
-
----
-
-## 📊 Lenguajes más usados
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BorjaFernandezRodrigo&layout=donut-vertical&theme=radical&hide_border=true&bg_color=0D1117&title_color=30e87a&text_color=FFFFFF" alt="Top Languages"/>
-</div>
-
 ---
 
 ## 🎯 Competencias Clave
@@ -187,7 +165,7 @@ const borja = {
 
 ¿Tienes un proyecto interesante? ¡Hablemos!
 
-[![Portfolio](https://img.shields.io/badge/Mi_Portfolio-30e87a?style=for-the-badge&logo=safari&logoColor=white)](https://github.com/BorjaFernandezRodrigo)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-30e87a?style=for-the-badge)](https://borjafernandezrodrigo.github.io/BorjaFernandezRodrigo)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/borjafernandez)
 [![Email](https://img.shields.io/badge/Escríbeme-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contacto@ejemplo.com)
 
