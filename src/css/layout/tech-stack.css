@@ -3,7 +3,7 @@
 }
 
 .tech-stack__header {
-  @apply h-15 mb-4 flex flex-col sm:flex-row items-center sm:justify-between gap-4;
+  @apply h-15 mb-4 flex flex-row items-center sm:justify-between gap-4;
 }
 
 .tech-stack__title-wrapper {
@@ -19,15 +19,15 @@
 }
 
 .tech-stack__filter {
-  @apply w-full overflow-hidden h-15 items-center flex justify-end;
+  @apply w-full overflow-hidden h-15 items-center flex justify-end flex-row;
 }
 
 .tech-stack__badges {
-  @apply flex flex-wrap gap-2 items-center h-10;
+  @apply flex gap-2 items-center h-10 overflow-auto;
 }
 
 .tech-stack__cards {
-  @apply transition-opacity duration-300 ease-in-out flex gap-4 overflow-x-auto pb-4;
+  @apply transition-opacity duration-300 ease-in-out flex gap-4 overflow-auto pb-4;
 }
 
 .tech-stack__card {

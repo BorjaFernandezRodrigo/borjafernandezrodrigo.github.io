@@ -16,7 +16,7 @@
 }
 
 .career__container {
-  @apply max-h-[300px] sm:max-h-[400px] md:max-h-112.5 overflow-y-auto pr-2 sm:pr-3 md:pr-4;
+  @apply max-h-[300px] sm:max-h-[400px] md:max-h-112.5 overflow-y-auto py-1;
 }
 
 .career__timeline {
@@ -29,20 +29,10 @@
 }
 
 .career-item__dot {
-  @apply absolute top-1 size-4 sm:size-5 border-2 rounded-full transition-colors;
-  left: -33px;
-}
-
-@media (min-width: 640px) {
-  .career-item__dot {
-    left: -41px;
-  }
-}
-
-@media (min-width: 768px) {
-  .career-item__dot {
-    left: -57px;
-  }
+  @apply absolute border-2 rounded-full transition-colors;
+  @apply size-4 sm:size-5;
+  @apply -left-6 sm:-left-8 md:-left-10 lg:-left-14;
+  @apply top-1;
 }
 
 .career-item__dot--active {

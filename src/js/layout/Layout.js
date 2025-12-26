@@ -32,7 +32,7 @@ export class Layout {
       <div class="layout__background-grid"></div>
       <div class="layout__scanlines"></div>
       <div class="layout__content">
-        <nav class="h-screen">${this.navbar.render()}</nav>
+        ${this.navbar.render()}
         <main class="layout__main">
           <div class="layout__main-content">
             <div id="home">

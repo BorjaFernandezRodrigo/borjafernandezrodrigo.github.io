@@ -1,10 +1,10 @@
 /* Projects Section */
 .projects {
-  @apply space-y-8 overflow-auto h-110;
+  @apply space-y-8;
 }
 
 .projects__header {
-  @apply flex items-center justify-between mb-4 sticky top-0 z-10 bg-linear-to-b from-transparent to-transparent backdrop-blur-xs;
+  @apply flex items-center justify-between mb-4;
 }
 
 .projects__header-content {
@@ -25,7 +25,7 @@
 
 /* Projects Container */
 .projects__container {
-  @apply grid gap-3 sm:gap-4 md:gap-6 overflow-auto p-3 sm:p-4 h-[45rem] sm:h-[50rem] md:h-[50rem] max-h-[600px] sm:max-h-[700px] md:max-h-[800px];
+  @apply grid gap-3 sm:gap-4 md:gap-6 overflow-auto p-3 sm:p-4 h-[45rem] sm:h-[50rem] md:h-[50rem] max-h-[443px] sm:max-h-[700px] md:max-h-[800px];
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
@@ -44,7 +44,7 @@
 
 /* Project Card */
 .project-card {
-  @apply relative overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/5 transition-all duration-300 ease-out shadow-sm hover:border-emerald-400/40;
+  @apply min-h-28 relative overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/5 transition-all duration-300 ease-out shadow-sm hover:border-emerald-400/40;
 }
 
 /* Project Card Image */

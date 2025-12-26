@@ -1,5 +1,60 @@
+/* Botón hamburguesa */
+.navbar__toggle {
+  @apply fixed top-4 right-4 z-50;
+  @apply flex items-center justify-center;
+  @apply w-11 h-11 rounded-lg;
+  @apply bg-white/90 dark:bg-surface-dark/90 backdrop-blur-md;
+  @apply border border-gray-200 dark:border-primary/20;
+  @apply shadow-lg;
+  @apply cursor-pointer;
+  @apply transition-all duration-300;
+  @apply md:hidden;
+}
+
+.navbar__toggle:hover {
+  @apply bg-primary/10 border-primary/50;
+}
+
+.navbar__toggle-icon {
+  @apply text-xl text-primary transition-transform duration-300;
+}
+.navbar__overlay {
+  @apply fixed inset-0 bg-black/50 backdrop-blur-sm z-30;
+  @apply opacity-0 pointer-events-none;
+  @apply transition-opacity duration-300;
+  @apply md:hidden;
+}
+
+.navbar__overlay--active {
+  @apply opacity-100 pointer-events-auto;
+}
+
+/* Navbar */
 .navbar {
-  @apply z-10 w-full md:w-80 flex-shrink-0 bg-white/80 dark:bg-surface-dark/90 backdrop-blur-md border-r border-gray-200 dark:border-white/5 flex flex-col justify-between p-6 order-2 md:order-1 h-auto md:h-full overflow-y-auto transition-colors duration-300 relative;
+  @apply fixed md:sticky md:top-0 z-40;
+  @apply w-[280px] sm:w-[320px] md:w-80;
+  @apply h-screen;
+  @apply flex-shrink-0 bg-white/95 dark:bg-surface-dark/95 backdrop-blur-md;
+  @apply border-r border-gray-200 dark:border-white/5;
+  @apply flex flex-col justify-between p-6 pt-16 md:pt-6;
+  @apply overflow-y-auto transition-transform duration-300 ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    @apply fixed -translate-x-full;
+  }
+
+  .navbar--open {
+    @apply translate-x-0;
+    box-shadow: 4px 0 25px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    @apply relative translate-x-0;
+  }
 }
 
 .navbar__content {
@@ -11,18 +66,13 @@
 }
 
 .navbar__footer {
-  @apply flex flex-col gap-2 mt-6 pt-5 border-t border-black/10 dark:border-white/10 transition-colors duration-300;
+  @apply hidden md:flex flex-col gap-2 mt-6 pt-5 border-t border-black/10 dark:border-white/10 transition-colors duration-300;
+}
+
+.navbar--open .navbar__footer {
+  @apply flex;
 }
 
 .navbar__bottoms {
   @apply flex flex-row gap-4 mt-6 justify-between;
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    @apply w-[320px] h-full order-1;
-  }
-  .navbar__footer {
-    @apply flex;
-  }
 }
