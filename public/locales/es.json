@@ -110,8 +110,8 @@
   "console.skills": "JavaScript, React, Vue, Node.js, CSS, HTML",
   "console.projects": "¡Consulta la sección de proyectos!",
   "console.contact.title": "Contáctame:",
-  "console.contact.email": "Email: your@email.com",
-  "console.contact.github": "GitHub: github.com/yourprofile",
-  "console.contact.linkedin": "LinkedIn: linkedin.com/in/yourprofile",
+  "console.contact.email": "Email: contacto@ejemplo.com",
+  "console.contact.github": "GitHub: github.com/BorjaFernandezRodrigo",
+  "console.contact.linkedin": "LinkedIn: linkedin.com/in/borjafernandez",
   "console.error": "comando no encontrado"
 }
